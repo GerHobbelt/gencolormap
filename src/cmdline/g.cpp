@@ -63,6 +63,7 @@ make
 
 
 
+#define _USE_MATH_DEFINES
 
 #include <vector>
 #include <cstdio>
@@ -75,9 +76,11 @@ make
 
 
 
+#if 0
 // To communicate extra information back to the program, a few global extern variables are referenced by the program to fetch information from getopt:
 extern char *optarg;
 extern int optind;
+#endif
 
 
 //#include "colormap.hpp"
