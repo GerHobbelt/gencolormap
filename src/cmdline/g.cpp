@@ -63,7 +63,9 @@ make
 
 
 
+#ifndef _USE_MATH_DEFINES
 #define _USE_MATH_DEFINES
+#endif
 
 #include <vector>
 #include <cstdio>
@@ -1555,7 +1557,7 @@ std::string ToPPM(int n, const unsigned char* srgb_colormap)
 
 
 
-int main(int argc, char* argv[])
+int main(int argc, const char** argv)
 {
     bool print_version = false;
     bool print_help = false;
